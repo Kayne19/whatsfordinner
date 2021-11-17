@@ -1,27 +1,7 @@
 extends layout
 
 block content
+  include mixins/restaurantCard
   div.container
-    div.card
-      div.card-header
-        div.backdrop
-        div.card-title Pizza Hut
-        img.card-header-image(src='https://upload.wikimedia.org/wikipedia/en/2/2a/Mikhail_Gorbachev_in_the_Pizza_Hut_commercial%2C_November_1997.png')
-      div.card-body
-        div.edit
-          a(href='#') Edit
-        div.card-details
-          div.category Italian
-          div.rating
-            span &#X2B50;
-            span &#X2B50;
-        div.description
-          | pizza hut pizza hut pizza hut pizza hut
-          | pizza hut pizza hut pizza hut pizza hut
-          | pizza hut pizza hut pizza hut pizza hut
-          | pizza hut pizza hut pizza hut pizza hut
-          | pizza hut pizza hut pizza hut pizza hut
-          | pizza hut pizza hut pizza hut pizza hut
-
-
-
+    each restaurant in restaurants
+      +restaurantCard(restaurant)
