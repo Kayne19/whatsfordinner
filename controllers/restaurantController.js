@@ -11,7 +11,7 @@ module.exports.viewAll = function(req, res, next) {
         id: 2,
         name: 'Pizza Hut 2',
         image: 'https://upload.wikimedia.org/wikipedia/en/2/2a/Mikhail_Gorbachev_in_the_Pizza_Hut_commercial%2C_November_1997.png',
-        rating: 10,
+        rating: 5,
         category: 'Italian',
         description: ' Pizza Hut 2'
     }];
